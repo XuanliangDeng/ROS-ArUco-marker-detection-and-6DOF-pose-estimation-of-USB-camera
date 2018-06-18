@@ -67,4 +67,10 @@ projection
 0.000000 487.277588 215.998033 0.000000
 0.000000 0.000000 1.000000 0.000000
 ```
+You should see results like this pops up in the terminal, telling you that the yaml file has been created.
+```c++
+[ INFO] [1529361043.469128729]: writing calibration data to /home/dengxuanliang/.ros/camera_info/head_camera.yaml
+```
+Congrats! The calibration is complete, for more methods, please check the link.
+
 
