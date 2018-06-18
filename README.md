@@ -15,6 +15,7 @@ $ sudo apt-get install ros-indigo-usb-cam
 ```
 
 * Callibration
+
 Run the following code and use rostopic list to check whether the related topics are published.
 ```C++
 $ roslaunch usb_cam usb_cam-text.launch
