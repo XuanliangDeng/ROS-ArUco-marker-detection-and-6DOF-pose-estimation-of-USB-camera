@@ -3,7 +3,7 @@ This is the project for Summer 2018, supervised by Professor Patricio A. Vela &a
 
 # Description
 There is nothing fancy here, just want to write down my experience to remind me of what I have done. Hope this could be helpful:) 
-All related links &amp; sources are attached. Special thank to [ROS-Developer](http://ros-developer.com/2017/04/23/aruco-ros/)
+All related links &amp; sources are attached. Thank ros-developer for help.  [ROS-Developer](http://ros-developer.com/2017/04/23/aruco-ros/)
 
 ## Device Check
 When you plug in your USB camera, check the device information in your ubuntu system by typing
