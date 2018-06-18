@@ -29,5 +29,36 @@ The next step is to calibrate the camera using the python file, the window will 
 ```C++
 $ rosrun camera_calibration cameracalibrator.py --size 8x6 --square 0.024  image:=/usb_cam/image_raw camera:=/usb_cam
 ```
+When it is done, click commit, the head_camera.yaml file will be saved.
+One result could be like this
+```C++
+[image]
 
+width
+640
+
+height
+480
+
+[narrow_stereo]
+
+camera matrix
+477.968880 0.000000 323.986101
+0.000000 481.394788 215.666277
+0.000000 0.000000 1.000000
+
+distortion
+-0.001547 0.012026 -0.003221 0.003763 0.000000
+
+rectification
+1.000000 0.000000 0.000000
+0.000000 1.000000 0.000000
+0.000000 0.000000 1.000000
+
+projection
+480.306671 0.000000 326.122370 0.000000
+0.000000 484.428345 213.626728 0.000000
+0.000000 0.000000 1.000000 0.000000
+
+```
 
