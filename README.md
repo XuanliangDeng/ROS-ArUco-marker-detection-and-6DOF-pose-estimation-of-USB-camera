@@ -5,13 +5,23 @@ This is the project for Summer 2018, supervised by Professor Patricio A. Vela &a
 There is nothing fancy here, just want to write down my experience to remind me of what I have done. Hope this could helpful:) 
 All related links &amp; sources are attached.
 
+## Device Check
+When you plug in your USB camera, check the device information in your ubuntu system by typing
+```C++
+$ cd /dev
+$ l
+```
+If your device connection has no problem, you may see both video0 &amp; video1. For me, the video0 is the webcam of my macbook, while video1 is the USB camera I want to use.
+
+
 ## Camera Calibration
 To detect ArUco markers using usb cameras, the first step is camera calibration. I used [camera_calibration](http://wiki.ros.org/camera_calibration) , a ros package, to implement this. To be more specific, my USB camera is [UC20MPD_ND](https://store.spinelelectronics.com/UC20MPD_ND)
 
 * Install
 ```C++
+$ roscore
 $ rosdep install camera_calibration
-$ sudo apt-get install ros-indigo-usb-cam
+$ sudo apt-get install ros-indigo-usb-cam ros-indigo-aruco-ros
 ```
 
 * Callibration
