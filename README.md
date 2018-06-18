@@ -85,4 +85,29 @@ Congrats! The calibration is complete, for more methods, please check the link.
 
 ## ArUco marker detection
 This part is about AR marker detection, please check the src directory for all the launch files I used.
+* Publish images from USB camera:
 
+```c++
+$ cd catkin_ws/src
+$ roslaunch usb_cam_stream_publisher.launch
+```
+* ArUco marker detection &amp; 6DOF pose 
+
+```c++
+$ cd catkin_ws/src
+$ roslaunch aruco_marker_finder.launch markerId:=701 markerSize:=0.074
+```
+
+* Visualization
+Use the rqt gui to visualize the marker detection result, remember to add plugin. Menu -> Plugins -> Visualization -> Image_View. 
+
+```
+$ rosrun rqt_gui rqt_gui
+```
+
+* Print pose estimation
+
+```
+$ rostopic echo /aruco_single/pose
+```
+You will see both transformation and rotation information in the screen.
