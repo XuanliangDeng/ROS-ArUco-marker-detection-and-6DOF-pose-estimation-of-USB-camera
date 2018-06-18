@@ -73,4 +73,6 @@ You should see results like this pops up in the terminal, telling you that the y
 ```
 Congrats! The calibration is complete, for more methods, please check the link.
 
+## ArUco marker detection
+This part is about AR marker detection, please check the src directory for all the launch files I used.
 
