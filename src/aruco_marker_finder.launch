@@ -1,0 +1,23 @@
+<launch>
+ 
+<arg name="markerId" default="701"/>
+<arg name="markerSize" default="0.074"/> <!-- in meter -->
+<arg name="eye" default="left"/>
+<arg name="marker_frame" default="marker_frame"/>
+<arg name="ref_frame" default=""/> <!-- leave empty and the pose will be published wrt param parent_name -->
+<arg name="corner_refinement" default="LINES" /> <!-- NONE, HARRIS, LINES, SUBPIX -->
+ 
+ 
+<node pkg="aruco_ros" type="single" name="aruco_single">
+<remap from="/camera_info" to="/usb_cam/camera_info" />
+<remap from="/image" to="/usb_cam/image_raw" />
+<param name="image_is_rectified" value="True"/>
+<param name="marker_size" value="$(arg markerSize)"/>
+<param name="marker_id" value="$(arg markerId)"/>
+<param name="reference_frame" value="$(arg ref_frame)"/> <!-- frame in which the marker pose will be refered -->
+<param name="camera_frame" value="base_link"/>
+<param name="marker_frame" value="$(arg marker_frame)" />
+<param name="corner_refinement" value="$(arg corner_refinement)" />
+</node>
+ 
+</launch>
