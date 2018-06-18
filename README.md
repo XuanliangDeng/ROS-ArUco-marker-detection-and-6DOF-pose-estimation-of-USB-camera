@@ -87,6 +87,8 @@ Congrats! The calibration is complete, for more methods, please check the link.
 This part is about AR marker detection, please check the src directory for all the launch files I used.
 * Publish images from USB camera:
 
+Before publish this information, REMEMBER TO ABORT the process in previous steps(roslaunch usb_cam usb_cam-text.launch). Otherwise it will pop up an error saying that device is busy.
+
 ```c++
 $ cd catkin_ws/src
 $ roslaunch usb_cam_stream_publisher.launch
@@ -99,7 +101,7 @@ $ roslaunch aruco_marker_finder.launch markerId:=701 markerSize:=0.074
 ```
 
 * Visualization
-Use the rqt gui to visualize the marker detection result, remember to add plugin. Menu -> Plugins -> Visualization -> Image_View. 
+Use the rqt gui to visualize the marker detection result, remember to add plugin. Menu -> Plugins -> Visualization -> Image_View. To generate ArUco marker, you can use the following website: [ArUco marker generation](https://terpconnect.umd.edu/~jwelsh12/enes100/markergen.html)
 
 ```
 $ rosrun rqt_gui rqt_gui
