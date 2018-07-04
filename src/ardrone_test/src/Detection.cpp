@@ -13,8 +13,6 @@
 using namespace std;
 using namespace cv;
 
-static const char WINDOW[]="RGB Image";
-static const char WINDOW2[]="Gray Image";
 int squaresX, squaresY, dictionaryId;
 float squareLength, markerLength;
 bool showRejected, refindStrategy;
