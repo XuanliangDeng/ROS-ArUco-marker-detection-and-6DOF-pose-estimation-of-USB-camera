@@ -1,0 +1,16 @@
+1. 不要做两个程序间的通信, 也就是说不要想着拿着Tracking.cc去获取charuco里的keypoint然后再处理什么的，水平不够别妄想了：/
+解决办法是直接在tracking里面直接复制粘贴相关的代码,写成一个函数
+2. 关于测试tracking的输出结果, 最好的办法是写测试用例, 详情见test目录下的各种文件, 巨难, 暂时也不要妄想了
+3. 关于查看输出结果,可以用cvwaitkey block掉程序运行，类似于设置断点一步步查看关键点计算, 描述子, 向量间距以及后面各种levels scales等等 print out 信息
+4. 关于如何跑数据集, 首先得下载一个rosbag, https://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets 第一个rosbag link 
+就可以 但是网不好他妈的下不了啊啊啊啊啊啊啊！
+5. 至于怎么跑 先把包拷下来再说吧
+先cd到这里~/ros_workspace/package_dir/GF_ORB_SLAM
+然后./build.sh 通过以后用python
+python Run_EuRoC.py 
+在py文件中修改了几处地方, 
+1 输出结果的路径 Result_root = '~/Debug_ORB/'
+2 Number_GF_List = [1000]; 不用跑那么多种情况如果只是测试的话
+3 File_rosbag  = '/home/parallels/Untitled_Folder/' + SeqName + '.bag' 这里的路径改为rosbag的路径 
+然后应该也许可能能跑了
+
