@@ -1,0 +1,4 @@
+1. 尽量少用namespace 尤其是多个namespace同时调用时可能会产生重复定义, 比如说namespace std; namespace cv;
+替代的方法是直接将命名空间加在变量的前面直接指明，比如说Mat 可以直接指明为 cv::Mat, string直接指明为std::string 可以避免重复定义
+2. 生成对象的时候的格式是 ChArUco *obj = new ChArUco(); 动态分配内存。不是像int n那样生成的
+3. 构造函数如果有默认值写在头文件里, 不要写在cpp的实现文件中。
