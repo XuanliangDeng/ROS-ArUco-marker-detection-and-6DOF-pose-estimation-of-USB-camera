@@ -125,6 +125,8 @@ The drone I use for this project is Parrot AR Drone 2.0. The ROS version is Kine
 ## Software dependencies
 * ROS - tested with Kinetic version
 * OpenCV - tested with OpenCV 3.3.1 with corresponding opencv_contrib
+* For opencv_contrib and OpenCV3 installation, these instructions on this website could be very helpful(could skip those steps about virtual environment)   [OpenCV Installation](https://www.learnopencv.com/install-opencv3-on-ubuntu/)
+
 
 
 ## Camera calibration
