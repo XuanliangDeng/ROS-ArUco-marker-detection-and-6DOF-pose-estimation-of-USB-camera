@@ -116,7 +116,7 @@ You will see both transformation and rotation information in the screen.
 
 
 # Camera pose estimation with ROS and ChArUco markers
-This is summer project 2018, supervised by Professor Patricio A. Vela &amp; Yipu Zhao
+This is summer project 2018, supervised by Professor Patricio A. Vela &amp; Yipu Zhao.  
 The main tools are OpenCV, ChArUco, ROS. 
 
 ## Device description
