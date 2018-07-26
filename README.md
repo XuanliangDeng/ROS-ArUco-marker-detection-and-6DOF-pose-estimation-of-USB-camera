@@ -120,9 +120,10 @@ This is summer project 2018, supervised by Professor Patricio A. Vela &amp; Yipu
 The main tools are OpenCV, ChArUco, ROS. 
 
 ## Device description
-The drone I use for this project is Parrot AR Drone 2.0. The ROS version is Kinetic with OpenCV 3.3.1(including OpenCV_contrib). ChArUco stands for Chessboard + ArUco = ChArUco. 
+The drone I use for this project is Parrot AR Drone 2.0. The ROS version is Kinetic with OpenCV 3.3.1(including OpenCV_contrib). ChArUco stands for Chessboard + ArUco = ChArUco. The functions related to ChArUco marker detection are already included in OpenCV(after 3.0 version). 
 
-
+## Camera calibration
+Before any tests, the first key step is to calibrate the camera we use. The function for this is included in directory。 ~/opencv_contrib/modules/aruco/samples/
 
 
 
