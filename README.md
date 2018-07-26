@@ -113,3 +113,23 @@ $ rosrun rqt_gui rqt_gui
 $ rostopic echo /aruco_single/pose
 ```
 You will see both transformation and rotation information in the screen.
+
+
+# Camera pose estimation with ROS and ChArUco chessboard
+This is summer project 2018, supervised by Professor Patricio A. Vela &amp; Yipu Zhao
+The main tools are OpenCV, ChArUco, ROS. 
+
+## Device description
+The drone I use for this project is Parrot AR Drone 2.0. The ROS version is Kinetic with OpenCV 3.3.1(including OpenCV_contrib). ChArUco stands for Chessboard + ArUco = ChArUco. 
+
+
+
+
+
+
+
+
+
+
+
+
