@@ -115,12 +115,17 @@ $ rostopic echo /aruco_single/pose
 You will see both transformation and rotation information in the screen.
 
 
-# Camera pose estimation with ROS and ChArUco chessboard
+# Camera pose estimation with ROS and ChArUco markers
 This is summer project 2018, supervised by Professor Patricio A. Vela &amp; Yipu Zhao
 The main tools are OpenCV, ChArUco, ROS. 
 
 ## Device description
 The drone I use for this project is Parrot AR Drone 2.0. The ROS version is Kinetic with OpenCV 3.3.1(including OpenCV_contrib). ChArUco stands for Chessboard + ArUco = ChArUco. The functions related to ChArUco marker detection are already included in OpenCV(after 3.0 version). 
+
+## Software dependencies
+* ROS - tested with Kinetic version
+* OpenCV - tested with OpenCV 3.3.1 with corresponding opencv_contrib
+
 
 ## Camera calibration
 Before any tests, the first key step is to calibrate the camera we use. The function for this is included in directory and the file name is calibrate_camera_charuco.cpp.
